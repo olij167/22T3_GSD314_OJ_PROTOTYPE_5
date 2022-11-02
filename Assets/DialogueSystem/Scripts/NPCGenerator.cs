@@ -220,7 +220,7 @@ public class NPCGenerator : MonoBehaviour
 
     public void AddNPCsToPlayerDialogue(List<NPCInfo> npcInfoList)
     {
-        playerDialogue.playerQuestions.Clear();
+       // playerDialogue.playerQuestions.Clear();
 
         for (int i = 0; i < npcInfoList.Count; i++)
         {

@@ -18,4 +18,16 @@ public class PlayerInfoController : MonoBehaviour
     //        quest.
     //    }
     //}
+
+    public float AffectStatalues(StatContainer.Stat stat)
+    {
+        for (int i = 0; i < playerStats.listOfStats.Count; i++)
+        {
+            if (playerStats.listOfStats[i].statName == stat.statName)
+                playerStats.listOfStats[i].statValue += stat.statValue;
+
+        }
+
+        return stat.statValue;
+    }
 }

@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec0425320d38f7d43999f274933d3c85, type: 3}
   m_Name: New Waypoint Quest
   m_EditorClassIdentifier: 
+  questType: 0
   questName: 
   questDescription: 
+  questReward:
+    rewards:
+    - rewardType: 2
+      itemRewardsList: []
+      statsToAffectList: []
+      unlockedPlayerDialogueOptionsList: []
+      unlockedNPCDialogueOptionsList: []
   isActive: 0
   isCompleted: 0
-  isLocked: 0
-  destination: {x: 0, y: 0, z: 0}
-  playerPosition: {x: 0, y: 0, z: 0}
+  destination: {fileID: 0}
+  playerPosition: {fileID: 0}
   distanceToReach: 0.5
-  questDestination: {fileID: 0}

@@ -306,6 +306,7 @@ public class DialogueListSystem : MonoBehaviour
         responseTimerActive = false;
 
         selectedDialogueOption.AffectEmotionValues();
+        selectedDialogueOption.AffectStatValues();
         //npc.npcEmotions.SetMood();
 
 

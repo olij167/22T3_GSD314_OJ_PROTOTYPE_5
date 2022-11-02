@@ -59,6 +59,20 @@ public class NPCMoodInspectorEditor : Editor
 
         GUILayout.Space(5f);
 
+        GUILayout.BeginHorizontal();
+
+        GUILayout.Label("Set Emotions & Personality for all NPCs");
+
+        if (GUILayout.Button("Set Emotions"))
+        {
+            SetCreatedEmotionsToAllOtherNPC();
+
+            AddPersonalityThresholdsForAllOtherNPC();
+        }
+        GUILayout.EndHorizontal();
+
+        GUILayout.Space(5f);
+
 
         GUILayout.BeginHorizontal();
 

@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueFromWorld: {fileID: 11400000, guid: 3d95e050aa1c52646b003ca3bd4e1a12, type: 2}
-  narrator: {fileID: 11400000, guid: b5cc8d88aed5d5c4d89a43fdf61ef58f, type: 2}
+  narrator: {fileID: 11400000, guid: 5714d22b24469b3478395fe452907447, type: 2}
 --- !u!65 &83583409
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -190,7 +190,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5b4d1c1d0f6c4004e824aa531c087485, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -762,7 +762,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: d468fedc6f5b5c541a99911240ed1ac1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -846,7 +846,7 @@ PrefabInstance:
     - target: {fileID: 2326249024483463738, guid: 50e32a50804fe7f4bad8f76e81220ca9,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -198.90811
       objectReference: {fileID: 0}
     - target: {fileID: 2326249025265495934, guid: 50e32a50804fe7f4bad8f76e81220ca9,
         type: 3}
@@ -863,6 +863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Inventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326249025347875444, guid: 50e32a50804fe7f4bad8f76e81220ca9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2326249025347875447, guid: 50e32a50804fe7f4bad8f76e81220ca9,
         type: 3}
@@ -1005,7 +1010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &674869152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1359,6 +1364,11 @@ PrefabInstance:
       propertyPath: interactIndicator
       value: 
       objectReference: {fileID: 1127985057}
+    - target: {fileID: 1218616941, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: nothingToSayDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bbc64c9ae118ef4fafffe34079b9565,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!114 &1218616939 stripped

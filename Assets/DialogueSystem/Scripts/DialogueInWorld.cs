@@ -9,9 +9,22 @@ public class DialogueInWorld : MonoBehaviour
 
     private void Awake()
     {
-        //if (dialogueFromWorld.requiresResponse)
+
+
+        PlayerDialogue.PlayerQuestions newPlayerQuestions = new PlayerDialogue.PlayerQuestions();
+
+        newPlayerQuestions.npc = narrator;
+
+        //foreach (PlayerDialogueOption response in dialogueFromWorld.playerResponses)
         //{
-        //    //FindObjectOfType<PlayerDialogue>().Ass();
+        //    PlayerDialogueOption newResponse = response;
+        //    newPlayerQuestions.questionsForNPC.Add(newResponse);
         //}
+
+        //Debug.Log("Generating questions for: " + npcInfoList[i].npcName);
+
+
+        FindObjectOfType<PlayerDialogue>().playerQuestions.Add(newPlayerQuestions);
+        
     }
 }

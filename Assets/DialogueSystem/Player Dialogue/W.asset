@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c30f8eed4d283fe49aaaf5b2d55ea18c, type: 3}
-  m_Name: Continue Dialogue
+  m_Name: W
   m_EditorClassIdentifier: 
-  dialogue: ".\t.\t.\t\n"
+  dialogue: You can talk?
   emotionsToAffectList: []
-  statsToEffectList: []
   isResponseToNPCDialogue: 0
   isGoodbyeOption: 0
   isChangeTopicOption: 0
@@ -22,13 +21,13 @@ MonoBehaviour:
   conditionalEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 11400000, guid: 50c741aed84458846862b6dc3b6f0339, type: 2}
+        m_TargetAssemblyTypeName: Quest, Assembly-CSharp
+        m_MethodName: ActivateQuest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

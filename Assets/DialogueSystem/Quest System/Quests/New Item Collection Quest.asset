@@ -12,11 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f499f8494347184a98245d5eec36e6d, type: 3}
   m_Name: New Item Collection Quest
   m_EditorClassIdentifier: 
+  questType: 2
   questName: 
   questDescription: 
+  questRewards:
+  - rewards:
+    - rewardType: 2
+      itemReward: {fileID: 0}
+      statToAffect:
+        emotionName: New Emotion
+        emotionValue: 0
+        currentThreshold: 0
+      unlockedPlayerDialogueOption: {fileID: 0}
+      unlockedNPCDialogueOption: {fileID: 0}
   isActive: 0
   isCompleted: 0
-  isLocked: 0
   requiredAmount: 0
   currentAmount: 0
-  itemPrefab: {fileID: 0}
+  inventoryItem: {fileID: 0}

@@ -56,13 +56,20 @@ public class StartDialogue : MonoBehaviour
         //Set NPC
         //Set greeting text
         //Set player options
+        dialogueSystem.inDialogue = true;
         dialogueSystem.enabled = true;
 
         dialogueSystem.npc = npc;
+
         //dialogueSystem.npc.npcEmotions.SetMood();
         dialogueSystem.npcNameText.text = npc.npcName + ":";
 
-        startingDialogue.playerResponses = playerDialogue.SetPlayerDialogueBasedOnCurrentNPCAndDialogue(npc, startingDialogue).playerResponses;
+        //if (npc.npcDialogue.dialogueConnections.Count > 0)
+        //{
+        //    playerDialogue.AddResponseOptions();
+        //}
+
+        //startingDialogue.playerResponses = playerDialogue.SetPlayerDialogueBasedOnCurrentNPCAndDialogue(npc, startingDialogue).playerResponses;
 
         //playerDialogue.AddResponseOptions();
 

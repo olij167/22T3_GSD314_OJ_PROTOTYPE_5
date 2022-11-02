@@ -11,7 +11,7 @@ public class Quest : ScriptableObject
 
     //public List<QuestGoal> questGoalsList;
 
-    public QuestReward questReward;
+    public List<QuestReward> questRewards;
 
     public bool isActive;
     public bool isCompleted;
@@ -20,6 +20,85 @@ public class Quest : ScriptableObject
     //public void LockQuest(bool locked)
     //{
     //    //public bool questIsLocked;
+    //}
+
+    public void ActivateQuest()
+    {
+        Quest quest = this;
+        PlayerInfoController playerInfo = FindObjectOfType<PlayerInfoController>();
+
+        playerInfo.activeQuestList.Add(quest);
+        quest.isActive = true;
+    }
+
+    public void CompleteQuest()
+    {
+        Quest quest = this;
+        PlayerInfoController playerInfo = FindObjectOfType<PlayerInfoController>();
+
+        if (!quest.isCompleted)
+        {
+            playerInfo.activeQuestList.Remove(quest);
+            playerInfo.completedQuestList.Add(quest);
+            quest.isActive = false;
+            quest.isCompleted = true;
+
+            //Give player reward
+
+            // apply stat effects
+        }
+    }
+    
+    //public void ActivateQuest(LocationQuest quest)
+    //{
+    //    PlayerInfoController playerInfo = FindObjectOfType<PlayerInfoController>();
+
+    //    playerInfo.activeQuestList.Add(quest);
+    //    quest.isActive = true;
+    //}
+
+    //public void CompleteQuest(LocationQuest quest)
+    //{
+    //    PlayerInfoController playerInfo = FindObjectOfType<PlayerInfoController>();
+
+    //    if (quest.GoalAchieved() && !quest.isCompleted)
+    //    {
+
+    //        playerInfo.activeQuestList.Remove(quest);
+    //        playerInfo.completedQuestList.Add(quest);
+    //        quest.isActive = false;
+    //        quest.isCompleted = true;
+
+    //        //Give player reward
+
+    //        // apply stat effects
+    //    }
+    //} 
+    
+    //public void ActivateQuest(DialogueQuest quest)
+    //{
+    //    PlayerInfoController playerInfo = FindObjectOfType<PlayerInfoController>();
+
+    //    playerInfo.activeQuestList.Add(quest);
+    //    quest.isActive = true;
+    //}
+
+    //public void CompleteQuest(DialogueQuest quest)
+    //{
+    //    PlayerInfoController playerInfo = FindObjectOfType<PlayerInfoController>();
+
+    //    if (quest.goalAchieved && !quest.isCompleted)
+    //    {
+
+    //        playerInfo.activeQuestList.Remove(quest);
+    //        playerInfo.completedQuestList.Add(quest);
+    //        quest.isActive = false;
+    //        quest.isCompleted = true;
+
+    //        //Give player reward
+
+    //        // apply stat effects
+    //    }
     //}
 
 }
@@ -98,3 +177,5 @@ public abstract class DialogueQuest : Quest
 //    //Quests related to performing some form of environmental interaction
 //    //for example inspecting elements of the environment to solve a puzzle
 //}
+
+

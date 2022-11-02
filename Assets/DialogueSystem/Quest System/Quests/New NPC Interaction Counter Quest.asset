@@ -15,6 +15,13 @@ MonoBehaviour:
   questType: 3
   questName: 
   questDescription: 
+  questReward:
+    rewards:
+    - rewardType: 0
+      itemRewardsList: []
+      statsToAffectList: []
+      unlockedPlayerDialogueOptionsList: []
+      unlockedNPCDialogueOptionsList: []
   isActive: 0
   isCompleted: 0
   requiredAmount: 0

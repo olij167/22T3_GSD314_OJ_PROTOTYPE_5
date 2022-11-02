@@ -18,9 +18,6 @@ public class StatContainer
 
     [HideInInspector] public string newStatName = "PlayerStat";
 
-    public float AffectStatalues(Stat stat, float valueChange)
-    {
-        return stat.statValue += valueChange;
-    }
+    
 
 }

@@ -11,6 +11,7 @@ public class PlayerDialogueOption : ScriptableObject
     public string dialogue;
 
     public List<NPCMood.Emotion> emotionsToAffectList;
+    public List<StatContainer.Stat> statsToEffectList;
 
     //public float npcWillRemember;
 
@@ -35,6 +36,20 @@ public class PlayerDialogueOption : ScriptableObject
             }
         }
        
+    }
+
+    public void AffectStatValues()
+    {
+        foreach (StatContainer.Stat statToEffect in statsToEffectList)
+        {
+            foreach (StatContainer.Stat stat in FindObjectOfType<PlayerInfoController>().playerStats.listOfStats)
+            {
+                if (stat.statName == statToEffect.statName)
+                {
+                    stat.statValue += statToEffect.statValue;
+                }
+            }
+        }
     }
 
     //public NPCEmotions.NPCFeelings AffectEmotionValues(NPCEmotions.NPCFeelings npcEmotions)
